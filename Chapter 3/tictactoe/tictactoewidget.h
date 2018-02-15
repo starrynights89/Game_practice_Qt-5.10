@@ -13,7 +13,7 @@ class TicTacToeWidget : public QWidget
 public:
     TicTacToeWidget(QWidget *parent = 0);
     ~TicTacToeWidget();
-    initNewGame;
+    void initNewGame();
 private:
     QList<QPushButton*> board;
     void setupBoard();
