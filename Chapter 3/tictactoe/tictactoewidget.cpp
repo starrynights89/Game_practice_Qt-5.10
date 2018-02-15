@@ -37,5 +37,6 @@ void TicTacToeWidget::setupBoard()
             connect(button, SIGNAL(clicked()), mapper, SLOT(map()));
         }
     }
+    connect(mapper, SIGNAL(mapped(int)), this, SLOT(handleButtonClick(int)));
     setLayout(gridLayout);
 }
