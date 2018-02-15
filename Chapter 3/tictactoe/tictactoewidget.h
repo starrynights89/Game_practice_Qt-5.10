@@ -4,8 +4,6 @@
 #include <QPushButton>
 #include <QGridLayout>
 class QPushButton;
-class QGridLayout;
-class QSignalMapper;
 
 class TicTacToeWidget : public QWidget
 {
