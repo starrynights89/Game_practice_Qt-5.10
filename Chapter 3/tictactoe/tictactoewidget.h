@@ -11,10 +11,15 @@ class TicTacToeWidget : public QWidget
     Q_OBJECT
 
 public:
+    enum Player
+    {
+        Invalid, Player 1, Player 2, Draw
+    };
     TicTacToeWidget(QWidget *parent = 0);
     ~TicTacToeWidget();
     void initNewGame();
 private:
+    Player m_currentPlayer;
     QList<QPushButton*> board;
     void setupBoard();
 };
