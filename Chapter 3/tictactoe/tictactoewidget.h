@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QGridLayout>
+#include <QSignalMapper>
 class QPushButton;
 
 class TicTacToeWidget : public QWidget
