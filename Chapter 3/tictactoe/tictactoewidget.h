@@ -15,6 +15,13 @@ public:
     {
         Invalid, Player 1, Player 2, Draw
     };
+    Player currentPlayer() const { return m_currentPlayer; }
+    void setCurrentPlayer(Player p)
+    {
+        if(m_currentPlayer==p) return; 
+        m_currentPlayer = p;
+        emit currentPlayerChanged(p);
+    }
     TicTacToeWidget(QWidget *parent = 0);
     ~TicTacToeWidget();
     void initNewGame();
