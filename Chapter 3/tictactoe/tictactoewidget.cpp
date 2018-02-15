@@ -28,3 +28,11 @@ void TicTacToeWidget::setupBoard()
     }
     setLayout(gridLayout);
 }
+
+void TicTacToeWidget::initNewGame()
+{
+    for(int i=0; i<9; i++)
+    {
+        board.at(i)->setText(" ");
+    }
+}
