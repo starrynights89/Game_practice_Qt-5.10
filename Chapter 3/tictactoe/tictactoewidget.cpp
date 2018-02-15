@@ -3,6 +3,7 @@
 TicTacToeWidget::TicTacToeWidget(QWidget *parent)
     : QWidget(parent)
 {
+    setupBoard();
 }
 
 TicTacToeWidget::~TicTacToeWidget()
@@ -25,4 +26,5 @@ void TicTacToeWidget::setupBoard()
             board.append(button);
         }
     }
+    setLayout(gridLayout);
 }
