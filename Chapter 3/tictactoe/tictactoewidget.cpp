@@ -7,5 +7,9 @@ TicTacToeWidget::TicTacToeWidget(QWidget *parent)
 
 TicTacToeWidget::~TicTacToeWidget()
 {
+}
+
+void TicTacToeWidget::setupBoard()
+{
 
 }

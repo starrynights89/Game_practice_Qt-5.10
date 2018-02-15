@@ -12,6 +12,7 @@ public:
     ~TicTacToeWidget();
 private:
     QList<QPushButton*> board;
+    void setupBoard();
 };
 
 #endif // TICTACTOEWIDGET_H
