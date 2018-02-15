@@ -25,6 +25,9 @@ public:
     TicTacToeWidget(QWidget *parent = 0);
     ~TicTacToeWidget();
     void initNewGame();
+signals:
+    void currentPlayerChanged(Player);
+    void gameOver(TicTacToeWidget::Player);
 private:
     Player m_currentPlayer;
     QList<QPushButton*> board;
