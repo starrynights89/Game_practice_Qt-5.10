@@ -25,6 +25,8 @@ public:
     TicTacToeWidget(QWidget *parent = 0);
     ~TicTacToeWidget();
     void initNewGame();
+public slots:
+    void handleButtonClick(int);
 signals:
     void currentPlayerChanged(Player);
     void gameOver(TicTacToeWidget::Player);

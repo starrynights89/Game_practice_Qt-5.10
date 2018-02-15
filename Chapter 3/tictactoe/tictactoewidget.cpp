@@ -18,6 +18,25 @@ void TicTacToeWidget::initNewGame()
     }
 }
 
+void TicTacToeWidget::handleButtonClick(int index)
+{
+    //out of bounds check
+    if(index < 0 || index >= board.size()) return; 
+    QPushButton *button = board.at(index);
+    if(button->text()!="") return; //invalid move
+    button->setText(currentPlayer()==Player1 ?"X":"O");
+    Player winner = checkWinCondition(index / 3, index % 3);
+    if(winner==Invalid)
+    {
+        setCurrentPlayer(currentPlayer()==Player1 ? Player2 : Player1);
+        return;
+    }
+    else
+    {
+        emit gameOver(winner);
+    }
+}
+
 void TicTacToeWidget::setupBoard()
 {
     QGridLayout *gridLayout = new QGridLayout;
