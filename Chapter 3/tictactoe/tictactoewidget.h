@@ -1,7 +1,10 @@
 #ifndef TICTACTOEWIDGET_H
 #define TICTACTOEWIDGET_H
 #include <QWidget>
+#include <QPushButton>
+#include <QGridLayout>
 class QPushButton;
+class QGridLayout;
 
 class TicTacToeWidget : public QWidget
 {
