@@ -13,7 +13,7 @@ class TicTacToeWidget : public QWidget
 public:
     enum Player
     {
-        Invalid, Player 1, Player 2, Draw
+        Invalid, Player1, Player2, Draw
     };
     Player currentPlayer() const { return m_currentPlayer; }
     void setCurrentPlayer(Player p)
