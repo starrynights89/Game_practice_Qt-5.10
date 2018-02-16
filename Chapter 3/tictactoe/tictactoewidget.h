@@ -22,6 +22,9 @@ public:
         m_currentPlayer = p;
         emit currentPlayerChanged(p);
     }
+
+    Player checkWinCondition(int row, int column) constl
+    
     TicTacToeWidget(QWidget *parent = 0);
     ~TicTacToeWidget();
     void initNewGame();
