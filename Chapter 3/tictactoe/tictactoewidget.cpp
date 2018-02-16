@@ -18,7 +18,7 @@ void TicTacToeWidget::initNewGame()
     }
 }
 
-TicTacToeWidget::checkWinCondition(int row, int column) const
+TicTacToeWidget::Player TicTacToeWidget::checkWinCondition(int row, int column) const
 {
     QString current = board.at(row * 3 + column)->text();
     int count = 0;
