@@ -23,7 +23,7 @@ public:
         emit currentPlayerChanged(p);
     }
 
-    Player checkWinCondition(int row, int column) constl
+    Player checkWinCondition(int row, int column) const;
     
     TicTacToeWidget(QWidget *parent = 0);
     ~TicTacToeWidget();
