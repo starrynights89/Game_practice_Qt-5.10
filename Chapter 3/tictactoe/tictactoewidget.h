@@ -27,7 +27,7 @@ public:
     ~TicTacToeWidget();
     void initNewGame();
 public slots:
-    void handleButtonClick(int);
+    void handleButtonClick(int index);
 signals:
     void currentPlayerChanged(Player);
     void gameOver(TicTacToeWidget::Player);
