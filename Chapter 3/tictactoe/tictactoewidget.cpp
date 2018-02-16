@@ -1,4 +1,7 @@
 #include "tictactoewidget.h"
+#include <QPushButton>
+#include <QGridLayout>
+#include <QSignalMapper>
 
 TicTacToeWidget::TicTacToeWidget(QWidget *parent)
     : QWidget(parent)
