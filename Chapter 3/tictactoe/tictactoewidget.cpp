@@ -18,6 +18,11 @@ void TicTacToeWidget::initNewGame()
     }
 }
 
+TicTacToeWidget::checkWinCondition(int row, int column) const
+{
+    
+}
+
 void TicTacToeWidget::handleButtonClick(int index)
 {
     //out of bounds check
