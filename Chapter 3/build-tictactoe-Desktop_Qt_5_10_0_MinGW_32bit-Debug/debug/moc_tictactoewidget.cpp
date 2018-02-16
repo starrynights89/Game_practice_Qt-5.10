@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_TicTacToeWidget_t {
-    QByteArrayData data[7];
-    char stringdata0[96];
+    QByteArrayData data[8];
+    char stringdata0[102];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,12 +37,13 @@ QT_MOC_LITERAL(2, 37, 0), // ""
 QT_MOC_LITERAL(3, 38, 6), // "Player"
 QT_MOC_LITERAL(4, 45, 8), // "gameOver"
 QT_MOC_LITERAL(5, 54, 23), // "TicTacToeWidget::Player"
-QT_MOC_LITERAL(6, 78, 17) // "handleButtonClick"
+QT_MOC_LITERAL(6, 78, 17), // "handleButtonClick"
+QT_MOC_LITERAL(7, 96, 5) // "index"
 
     },
     "TicTacToeWidget\0currentPlayerChanged\0"
     "\0Player\0gameOver\0TicTacToeWidget::Player\0"
-    "handleButtonClick"
+    "handleButtonClick\0index"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,7 +72,7 @@ static const uint qt_meta_data_TicTacToeWidget[] = {
     QMetaType::Void, 0x80000000 | 5,    2,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void, QMetaType::Int,    7,
 
        0        // eod
 };
