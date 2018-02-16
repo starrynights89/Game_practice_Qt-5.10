@@ -27,7 +27,7 @@ TicTacToeWidget::checkWinCondition(int row, int column) const
     {
         if(board.at(row*3+c)->text()==current)
         {
-            count++
+            count++;
         }
     }
     if(count==3) return currentPlayer();
@@ -37,9 +37,39 @@ TicTacToeWidget::checkWinCondition(int row, int column) const
     {
         if(board.at(r*3+column)->text()==current)
         {
-            count++
+            count++;
         }
     }
+    if(count == 3) return currentPlayer();
+    //if the move was done on diagonal, check the diagonal 
+    count = 0;
+    if(row == column)
+    {
+        for(int c = 0; c < 3; c++)
+        {
+            if(board.at(c*3+c)->text() == current)
+            {
+                count++;
+            }
+        }
+        if(count == 3) return currentPlayer();
+    }
+    count = 0;
+    if(row + column == 2)
+    {
+        for(int c = 0; c < 3; c++)
+        {
+            if(board.at((2-c)*3+c)->text() == current)
+            {
+                count++;
+            }
+        }
+        if(count == 3) return currentPlayer();
+    }
+
+    //check if there are unoccupied fields left
+    foreach(QPushButton *button, board) if(button->text() == " ") return Invalid;
+    return Draw;
 }
 
 void TicTacToeWidget::handleButtonClick(int index)
