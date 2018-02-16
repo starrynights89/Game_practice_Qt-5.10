@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_TicTacToeWidget_t {
-    QByteArrayData data[8];
-    char stringdata0[102];
+    QByteArrayData data[13];
+    char stringdata0[145];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -38,12 +38,18 @@ QT_MOC_LITERAL(3, 38, 6), // "Player"
 QT_MOC_LITERAL(4, 45, 8), // "gameOver"
 QT_MOC_LITERAL(5, 54, 23), // "TicTacToeWidget::Player"
 QT_MOC_LITERAL(6, 78, 17), // "handleButtonClick"
-QT_MOC_LITERAL(7, 96, 5) // "index"
+QT_MOC_LITERAL(7, 96, 5), // "index"
+QT_MOC_LITERAL(8, 102, 13), // "currentPlayer"
+QT_MOC_LITERAL(9, 116, 7), // "Invalid"
+QT_MOC_LITERAL(10, 124, 7), // "Player1"
+QT_MOC_LITERAL(11, 132, 7), // "Player2"
+QT_MOC_LITERAL(12, 140, 4) // "Draw"
 
     },
     "TicTacToeWidget\0currentPlayerChanged\0"
     "\0Player\0gameOver\0TicTacToeWidget::Player\0"
-    "handleButtonClick\0index"
+    "handleButtonClick\0index\0currentPlayer\0"
+    "Invalid\0Player1\0Player2\0Draw"
 };
 #undef QT_MOC_LITERAL
 
@@ -54,8 +60,8 @@ static const uint qt_meta_data_TicTacToeWidget[] = {
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
-       0,    0, // properties
-       0,    0, // enums/sets
+       1,   38, // properties
+       1,   42, // enums/sets
        0,    0, // constructors
        0,       // flags
        2,       // signalCount
@@ -73,6 +79,21 @@ static const uint qt_meta_data_TicTacToeWidget[] = {
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    7,
+
+ // properties: name, type, flags
+       8, 0x80000000 | 3, 0x0049510b,
+
+ // properties: notify_signal_id
+       0,
+
+ // enums: name, flags, count, data
+       3, 0x0,    4,   46,
+
+ // enum data: key, value
+       9, uint(TicTacToeWidget::Invalid),
+      10, uint(TicTacToeWidget::Player1),
+      11, uint(TicTacToeWidget::Player2),
+      12, uint(TicTacToeWidget::Draw),
 
        0        // eod
 };
@@ -105,6 +126,26 @@ void TicTacToeWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
             }
         }
     }
+#ifndef QT_NO_PROPERTIES
+    else if (_c == QMetaObject::ReadProperty) {
+        TicTacToeWidget *_t = static_cast<TicTacToeWidget *>(_o);
+        Q_UNUSED(_t)
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: *reinterpret_cast< Player*>(_v) = _t->currentPlayer(); break;
+        default: break;
+        }
+    } else if (_c == QMetaObject::WriteProperty) {
+        TicTacToeWidget *_t = static_cast<TicTacToeWidget *>(_o);
+        Q_UNUSED(_t)
+        void *_v = _a[0];
+        switch (_id) {
+        case 0: _t->setCurrentPlayer(*reinterpret_cast< Player*>(_v)); break;
+        default: break;
+        }
+    } else if (_c == QMetaObject::ResetProperty) {
+    }
+#endif // QT_NO_PROPERTIES
 }
 
 const QMetaObject TicTacToeWidget::staticMetaObject = {
@@ -140,6 +181,23 @@ int TicTacToeWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
             *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 3;
     }
+#ifndef QT_NO_PROPERTIES
+   else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
+            || _c == QMetaObject::ResetProperty || _c == QMetaObject::RegisterPropertyMetaType) {
+        qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    } else if (_c == QMetaObject::QueryPropertyDesignable) {
+        _id -= 1;
+    } else if (_c == QMetaObject::QueryPropertyScriptable) {
+        _id -= 1;
+    } else if (_c == QMetaObject::QueryPropertyStored) {
+        _id -= 1;
+    } else if (_c == QMetaObject::QueryPropertyEditable) {
+        _id -= 1;
+    } else if (_c == QMetaObject::QueryPropertyUser) {
+        _id -= 1;
+    }
+#endif // QT_NO_PROPERTIES
     return _id;
 }
 
