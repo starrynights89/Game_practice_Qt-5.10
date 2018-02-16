@@ -30,7 +30,16 @@ TicTacToeWidget::checkWinCondition(int row, int column) const
             count++
         }
     }
-    if
+    if(count==3) return currentPlayer();
+    count = 0;
+    //check vertical sequence
+    for(int r = 0; r < 3; r++)
+    {
+        if(board.at(r*3+column)->text()==current)
+        {
+            count++
+        }
+    }
 }
 
 void TicTacToeWidget::handleButtonClick(int index)
