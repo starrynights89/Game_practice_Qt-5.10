@@ -20,7 +20,17 @@ void TicTacToeWidget::initNewGame()
 
 TicTacToeWidget::checkWinCondition(int row, int column) const
 {
-    
+    QString current = board.at(row * 3 + column)->text();
+    int count = 0;
+    //check horizontal sequence 
+    for(int c = 0; c < 3; c++)
+    {
+        if(board.at(row*3+c)->text()==current)
+        {
+            count++
+        }
+    }
+    if
 }
 
 void TicTacToeWidget::handleButtonClick(int index)
