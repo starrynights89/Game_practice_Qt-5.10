@@ -1,4 +1,7 @@
 #include "tictactoewidget.h"
+#include <QPushButton>
+#include <QGridLayout>
+#include <QSignalMapper>
 
 TicTacToeWidget::TicTacToeWidget(QWidget *parent)
     : QWidget(parent)
@@ -77,8 +80,8 @@ void TicTacToeWidget::handleButtonClick(int index)
     //out of bounds check
     if(index < 0 || index >= board.size()) return; 
     QPushButton *button = board.at(index);
-    if(button->text()!="") return; //invalid move
-    button->setText(currentPlayer()==Player1 ?"X":"O");
+    if(button->text() != " ") return; //invalid move
+    button->setText(currentPlayer()==Player1 ? "X" : "O");
     Player winner = checkWinCondition(index / 3, index % 3);
     if(winner==Invalid)
     {
