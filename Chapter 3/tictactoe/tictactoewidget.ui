@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>254</width>
-    <height>108</height>
+    <width>272</width>
+    <height>155</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -65,8 +65,8 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>186</x>
-     <y>96</y>
+     <x>197</x>
+     <y>129</y>
     </hint>
     <hint type="destinationlabel">
      <x>173</x>
@@ -81,8 +81,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>186</x>
-     <y>96</y>
+     <x>197</x>
+     <y>129</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -90,5 +90,40 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>updateOKButtonState()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>updateOKButtonState()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>47</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <slot>updateOKButtonState()</slot>
+ </slots>
 </ui>
