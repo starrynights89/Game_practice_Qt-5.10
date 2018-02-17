@@ -30,7 +30,10 @@
    <item row="1" column="0">
     <widget class="QLabel" name="player2Name">
      <property name="text">
-      <string>Player 2 Name:</string>
+      <string>Player &amp;2 Name:</string>
+     </property>
+     <property name="buddy">
+      <cstring>lineEdit_2</cstring>
      </property>
     </widget>
    </item>
