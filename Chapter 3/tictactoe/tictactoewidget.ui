@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>254</width>
-    <height>108</height>
+    <width>462</width>
+    <height>337</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,8 +24,8 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="1">
-    <widget class="QLineEdit" name="lineEdit"/>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_2"/>
    </item>
    <item row="1" column="0">
     <widget class="QLabel" name="player2Name">
@@ -37,8 +37,8 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="1">
-    <widget class="QLineEdit" name="lineEdit_2"/>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEdit"/>
    </item>
    <item row="2" column="0" colspan="2">
     <widget class="QDialogButtonBox" name="buttonBox">
@@ -60,22 +60,6 @@
  <connections>
   <connection>
    <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>Dialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>175</x>
-     <y>306</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>92</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
    <signal>rejected()</signal>
    <receiver>Dialog</receiver>
    <slot>reject()</slot>
@@ -86,6 +70,22 @@
     </hint>
     <hint type="destinationlabel">
      <x>173</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
      <y>92</y>
     </hint>
    </hints>
