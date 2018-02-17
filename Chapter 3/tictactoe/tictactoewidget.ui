@@ -17,7 +17,10 @@
    <item row="0" column="0">
     <widget class="QLabel" name="player1Name">
      <property name="text">
-      <string>Player 1 Name:</string>
+      <string>Player &amp;1 Name:</string>
+     </property>
+     <property name="buddy">
+      <cstring>lineEdit</cstring>
      </property>
     </widget>
    </item>
@@ -55,12 +58,12 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
+     <x>164</x>
+     <y>75</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
-     <y>274</y>
+     <y>92</y>
     </hint>
    </hints>
   </connection>
@@ -71,12 +74,12 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
+     <x>164</x>
+     <y>81</y>
     </hint>
     <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
+     <x>173</x>
+     <y>92</y>
     </hint>
    </hints>
   </connection>
