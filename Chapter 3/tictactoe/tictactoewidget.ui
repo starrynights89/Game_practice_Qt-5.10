@@ -52,6 +52,11 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -61,8 +66,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>164</x>
-     <y>75</y>
+     <x>175</x>
+     <y>306</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -77,8 +82,8 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>164</x>
-     <y>81</y>
+     <x>175</x>
+     <y>306</y>
     </hint>
     <hint type="destinationlabel">
      <x>173</x>
