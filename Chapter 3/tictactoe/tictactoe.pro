@@ -29,3 +29,6 @@ SOURCES += \
 
 HEADERS += \
         tictactoewidget.h
+
+FORMS += \
+    configurationdialog.ui
