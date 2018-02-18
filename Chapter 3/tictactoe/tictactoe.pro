@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        tictactoewidget.cpp
+        tictactoewidget.cpp \
+    configurationdialog.cpp
 
 HEADERS += \
-        tictactoewidget.h
+        tictactoewidget.h \
+    configurationdialog.h
 
 FORMS += \
     configurationdialog.ui

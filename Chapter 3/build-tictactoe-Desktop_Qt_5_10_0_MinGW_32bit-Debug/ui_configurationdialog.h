@@ -36,7 +36,7 @@ public:
     {
         if (Dialog->objectName().isEmpty())
             Dialog->setObjectName(QStringLiteral("Dialog"));
-        Dialog->resize(272, 155);
+        Dialog->resize(254, 108);
         gridLayout = new QGridLayout(Dialog);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         player1Name = new QLabel(Dialog);
