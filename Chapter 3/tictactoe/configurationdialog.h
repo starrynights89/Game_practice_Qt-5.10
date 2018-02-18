@@ -15,6 +15,9 @@ public:
     explicit ConfigurationDialog(QWidget *parent = 0);
     ~ConfigurationDialog();
 
+public slots:
+    void updateOKButtonState();
+
 protected:
     void changeEvent(QEvent *e);
 
