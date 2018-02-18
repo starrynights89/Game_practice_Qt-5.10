@@ -11,6 +11,7 @@ ConfigurationDialog::ConfigurationDialog(QWidget *parent) :
 ConfigurationDialog::~ConfigurationDialog()
 {
     delete ui;
+    updateOKButtonState();
 }
 
 void ConfigurationDialog::updateOKButtonState()
