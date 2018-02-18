@@ -34,3 +34,6 @@ HEADERS += \
 
 FORMS += \
     configurationdialog.ui
+
+RESOURCES += \
+    resources.qrc
