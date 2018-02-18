@@ -31,5 +31,4 @@ HEADERS += \
         tictactoewidget.h
 
 FORMS += \
-    tictactoewidget.ui \
-    configurationdialog.ui
+    tictactoewidget.ui
