@@ -26,6 +26,10 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNewGame">
+   <property name="icon">
+    <iconset>
+     <normaloff>newgame.png</normaloff>newgame.png</iconset>
+   </property>
    <property name="text">
     <string>NewGame</string>
    </property>
@@ -37,6 +41,10 @@
    </property>
   </action>
   <action name="actionQuit">
+   <property name="icon">
+    <iconset>
+     <normaloff>application-exit.png</normaloff>application-exit.png</iconset>
+   </property>
    <property name="text">
     <string>Quit</string>
    </property>
