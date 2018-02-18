@@ -29,6 +29,3 @@ SOURCES += \
 
 HEADERS += \
         tictactoewidget.h
-
-FORMS += \
-    tictactoewidget.ui
