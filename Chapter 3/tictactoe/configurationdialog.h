@@ -17,6 +17,8 @@ public:
 
 public slots:
     void updateOKButtonState();
+    void setPlayer1Name(const QString &p1name);
+    void setPlayer2Name(const QString &p2name)
 
 protected:
     void changeEvent(QEvent *e);
