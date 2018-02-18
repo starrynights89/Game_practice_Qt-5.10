@@ -6,12 +6,12 @@ ConfigurationDialog::ConfigurationDialog(QWidget *parent) :
     ui(new Ui::ConfigurationDialog)
 {
     ui->setupUi(this);
+    updateOKButtonState();
 }
 
 ConfigurationDialog::~ConfigurationDialog()
 {
     delete ui;
-    updateOKButtonState();
 }
 
 void ConfigurationDialog::updateOKButtonState()
