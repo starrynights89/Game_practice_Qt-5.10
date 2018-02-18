@@ -1,5 +1,6 @@
 #include "configurationdialog.h"
 #include "ui_configurationdialog.h"
+#include <QPushButton>
 
 ConfigurationDialog::ConfigurationDialog(QWidget *parent) :
     QDialog(parent),
