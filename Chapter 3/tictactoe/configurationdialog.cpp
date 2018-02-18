@@ -15,14 +15,14 @@ ConfigurationDialog::~ConfigurationDialog()
     delete ui;
 }
 
-void ConfigurationDialog::setPlayer1Name(const QString &p1name)
+QString ConfigurationDialog::player1Name() const
 {
-    ui->player1Name->setText(p1name);
+    return ui->player1Name->text();
 }
 
-void ConfigurationDialog::setPlayer2Name(const QString &p2name)
+QString ConfigurationDialog::player2Name() const
 {
-    ui->player2Name->setText(p2name);
+    return ui->player2Name->text();
 }
 
 void ConfigurationDialog::updateOKButtonState()
