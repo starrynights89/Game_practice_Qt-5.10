@@ -20,6 +20,9 @@ public slots:
 protected:
     void changeEvent(QEvent *e);
 
+private slots:
+    void updateNameLabels();
+
 private:
     Ui::MainWindow *ui;
 };
