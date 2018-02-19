@@ -32,6 +32,7 @@ void MainWindow::startNewGame()
     ui->player2->setText(dlg.player2Name());
     ui->gameBoard->initNewGame();
     ui->gameBoard->setEnabled(true);
+    updateNameLabels();
 }
 
 void MainWindow::changeEvent(QEvent *e)

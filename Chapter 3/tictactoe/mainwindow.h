@@ -22,6 +22,7 @@ protected:
 
 private slots:
     void updateNameLabels();
+    void handleGameOver(TicTacToeWidget::Player winner);
 
 private:
     Ui::MainWindow *ui;
