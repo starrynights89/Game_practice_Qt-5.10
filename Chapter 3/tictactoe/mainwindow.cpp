@@ -6,11 +6,18 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->actionNewGame, SIGNAL(triggered()), this, SLOT(startNewGame()));
+    connect(ui->actionQuit, SIGNAL(triggered()), qApp, SLOT(quit()));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::startNewGame()
+{
+
 }
 
 void MainWindow::changeEvent(QEvent *e)
