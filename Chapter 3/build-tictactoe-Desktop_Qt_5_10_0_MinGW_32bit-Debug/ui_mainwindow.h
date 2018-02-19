@@ -34,8 +34,8 @@ public:
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QLabel *player1;
-    QLabel *player2;
     TicTacToeWidget *gameBoard;
+    QLabel *player2;
     QMenuBar *menubar;
     QMenu *menu_File;
     QStatusBar *statusbar;
@@ -65,15 +65,15 @@ public:
 
         verticalLayout->addWidget(player1);
 
-        player2 = new QLabel(centralwidget);
-        player2->setObjectName(QStringLiteral("player2"));
-
-        verticalLayout->addWidget(player2);
-
         gameBoard = new TicTacToeWidget(centralwidget);
         gameBoard->setObjectName(QStringLiteral("gameBoard"));
 
         verticalLayout->addWidget(gameBoard);
+
+        player2 = new QLabel(centralwidget);
+        player2->setObjectName(QStringLiteral("player2"));
+
+        verticalLayout->addWidget(player2);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);

@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QMessageBox>
+#include "configurationdialog.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -10,6 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionQuit, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(ui->gameBoard, SIGNAL(currentPlayerChanged(Player)), this, 
     SLOT (updateNameLabels()));
+    connect(ui->gameBoard, SIGNAL(gameOver(TicTacToeWidget::Player)), this,
+    SLOT (handleGameOver(TicTacToeWidget::Player)));
 }
 
 MainWindow::~MainWindow()
@@ -57,12 +61,12 @@ void MainWindow::handleGameOver(TicTacToeWidget::Player winner)
     QString message;
     if(winner == TicTacToeWidget::Draw)
     {
-        message = "Game ended with draw.";
+        message = "Game ended with a draw.";
     }
     else
     {
-        message = QString("%1 wins").arg(winner == TicTacToeWidget::Player1 ?
-        ui->player1->text() : ui->player2->text());
+        message = QString("%1 wins").arg(winner == TicTacToeWidget::Player1 
+                                ? ui->player1->text() : ui->player2->text());
     }
     QMessageBox::information(this,"Info",message);
 }
