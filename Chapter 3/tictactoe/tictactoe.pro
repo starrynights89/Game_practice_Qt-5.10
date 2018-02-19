@@ -38,4 +38,5 @@ FORMS += \
     configurationdialog.ui \
     mainwindow.ui
 
-RESOURCES +=
+RESOURCES += \
+    resources.qrc
