@@ -1,5 +1,3 @@
-#include "tictactoewidget.h"
-#include "configurationdialog.h"
 #include "mainwindow.h"
 #include <QApplication>
 

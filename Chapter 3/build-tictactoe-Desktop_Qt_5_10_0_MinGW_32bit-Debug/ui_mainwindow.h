@@ -45,7 +45,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(789, 585);
+        MainWindow->resize(200, 141);
         actionNewGame = new QAction(MainWindow);
         actionNewGame->setObjectName(QStringLiteral("actionNewGame"));
         QIcon icon;
@@ -78,7 +78,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 789, 21));
+        menubar->setGeometry(QRect(0, 0, 200, 21));
         menu_File = new QMenu(menubar);
         menu_File->setObjectName(QStringLiteral("menu_File"));
         MainWindow->setMenuBar(menubar);
