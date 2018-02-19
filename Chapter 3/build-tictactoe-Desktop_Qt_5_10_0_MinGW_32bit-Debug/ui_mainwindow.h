@@ -48,8 +48,14 @@ public:
         MainWindow->resize(200, 141);
         actionNewGame = new QAction(MainWindow);
         actionNewGame->setObjectName(QStringLiteral("actionNewGame"));
+        QIcon icon;
+        icon.addFile(QStringLiteral(":/newgame.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionNewGame->setIcon(icon);
         actionQuit = new QAction(MainWindow);
         actionQuit->setObjectName(QStringLiteral("actionQuit"));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral(":/application-exit.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionQuit->setIcon(icon1);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);

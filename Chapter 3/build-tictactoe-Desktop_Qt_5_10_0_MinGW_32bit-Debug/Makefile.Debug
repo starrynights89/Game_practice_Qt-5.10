@@ -110,7 +110,9 @@ compiler_rcc_make_all: debug/qrc_resources.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_resources.cpp
 debug/qrc_resources.cpp: ../tictactoe/resources.qrc \
-		C:/Qt/5.10.0/mingw53_32/bin/rcc.exe
+		C:/Qt/5.10.0/mingw53_32/bin/rcc.exe \
+		../tictactoe/application-exit.png \
+		../tictactoe/newgame.png
 	C:\Qt\5.10.0\mingw53_32\bin\rcc.exe -name resources ..\tictactoe\resources.qrc -o debug\qrc_resources.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
