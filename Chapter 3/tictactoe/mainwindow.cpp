@@ -50,3 +50,19 @@ void MainWindow::updateNameLabels()
     f.setBold(ui->gameBoard->currentPlayer() == TicTacToeWidget::Player2);
     ui->player2->setFont(f);
 }
+
+void MainWindow::handleGameOver(TicTacToeWidget::Player winner)
+{
+    ui->gameBoard->setEnabled(false);
+    QString message;
+    if(winner == TicTacToeWidget::Draw)
+    {
+        message = "Game ended with draw.";
+    }
+    else
+    {
+        message = QString("%1 wins").arg(winner == TicTacToeWidget::Player1 ?
+        ui->player1->text() : ui->player2->text());
+    }
+    QMessageBox::information(this,"Info",message);
+}
