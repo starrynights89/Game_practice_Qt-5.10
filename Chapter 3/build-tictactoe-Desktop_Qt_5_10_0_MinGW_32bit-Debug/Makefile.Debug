@@ -447,6 +447,8 @@ debug/moc_mainwindow.cpp: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QMainWindow 
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
+		../tictactoe/tictactoewidget.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QWidget \
 		../tictactoe/mainwindow.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.10.0/mingw53_32/bin/moc.exe
@@ -583,9 +585,9 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 
 ####### Compile
 
-debug/main.o: ../tictactoe/main.cpp ../tictactoe/tictactoewidget.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QWidget \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qwidget.h \
+debug/main.o: ../tictactoe/main.cpp ../tictactoe/mainwindow.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qmainwindow.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtguiglobal.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/qglobal.h \
@@ -611,6 +613,7 @@ debug/main.o: ../tictactoe/main.cpp ../tictactoe/tictactoewidget.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/qversiontagging.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtgui-config.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qwidget.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qwindowdefs.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/qobjectdefs.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/qnamespace.h \
@@ -687,14 +690,10 @@ debug/main.o: ../tictactoe/main.cpp ../tictactoe/tictactoewidget.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtouchdevice.h \
-		../tictactoe/configurationdialog.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QDialog \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h \
-		../tictactoe/mainwindow.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QMainWindow \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qmainwindow.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
+		../tictactoe/tictactoewidget.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qapplication.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -927,56 +926,10 @@ debug/configurationdialog.o: ../tictactoe/configurationdialog.cpp ../tictactoe/c
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtouchdevice.h \
 		ui_configurationdialog.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QAction \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qbuttongroup.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QDialogButtonBox \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdialogbuttonbox.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QGridLayout \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QHeaderView \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtCore/qitemselectionmodel.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qvalidator.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtCore/qregularexpression.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qslider.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qstyle.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QLineEdit \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qlineedit.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtextcursor.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtextformat.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qpen.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtextoption.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\configurationdialog.o ..\tictactoe\configurationdialog.cpp
 
 debug/mainwindow.o: ../tictactoe/mainwindow.cpp ../tictactoe/mainwindow.h \
@@ -1086,7 +1039,14 @@ debug/mainwindow.o: ../tictactoe/mainwindow.cpp ../tictactoe/mainwindow.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		../tictactoe/tictactoewidget.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QWidget \
+		ui_mainwindow.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h \
+		../tictactoe/configurationdialog.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QDialog
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\tictactoe\mainwindow.cpp
 
 debug/qrc_resources.o: debug/qrc_resources.cpp 
