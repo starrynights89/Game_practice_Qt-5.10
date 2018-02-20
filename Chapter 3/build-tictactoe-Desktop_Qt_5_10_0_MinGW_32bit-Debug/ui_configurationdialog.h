@@ -26,10 +26,10 @@ class Ui_ConfigurationDialog
 {
 public:
     QGridLayout *gridLayout;
-    QLabel *player1Name;
-    QLineEdit *lineEdit_2;
-    QLabel *player2Name;
-    QLineEdit *lineEdit;
+    QLabel *label;
+    QLineEdit *player2Name;
+    QLabel *label_2;
+    QLineEdit *player1Name;
     QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *ConfigurationDialog)
@@ -39,25 +39,25 @@ public:
         ConfigurationDialog->resize(254, 108);
         gridLayout = new QGridLayout(ConfigurationDialog);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        player1Name = new QLabel(ConfigurationDialog);
-        player1Name->setObjectName(QStringLiteral("player1Name"));
+        label = new QLabel(ConfigurationDialog);
+        label->setObjectName(QStringLiteral("label"));
 
-        gridLayout->addWidget(player1Name, 0, 0, 1, 1);
+        gridLayout->addWidget(label, 0, 0, 1, 1);
 
-        lineEdit_2 = new QLineEdit(ConfigurationDialog);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
-
-        gridLayout->addWidget(lineEdit_2, 1, 1, 1, 1);
-
-        player2Name = new QLabel(ConfigurationDialog);
+        player2Name = new QLineEdit(ConfigurationDialog);
         player2Name->setObjectName(QStringLiteral("player2Name"));
 
-        gridLayout->addWidget(player2Name, 1, 0, 1, 1);
+        gridLayout->addWidget(player2Name, 1, 1, 1, 1);
 
-        lineEdit = new QLineEdit(ConfigurationDialog);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        label_2 = new QLabel(ConfigurationDialog);
+        label_2->setObjectName(QStringLiteral("label_2"));
 
-        gridLayout->addWidget(lineEdit, 0, 1, 1, 1);
+        gridLayout->addWidget(label_2, 1, 0, 1, 1);
+
+        player1Name = new QLineEdit(ConfigurationDialog);
+        player1Name->setObjectName(QStringLiteral("player1Name"));
+
+        gridLayout->addWidget(player1Name, 0, 1, 1, 1);
 
         buttonBox = new QDialogButtonBox(ConfigurationDialog);
         buttonBox->setObjectName(QStringLiteral("buttonBox"));
@@ -67,16 +67,16 @@ public:
         gridLayout->addWidget(buttonBox, 2, 0, 1, 2);
 
 #ifndef QT_NO_SHORTCUT
-        player1Name->setBuddy(lineEdit);
-        player2Name->setBuddy(lineEdit_2);
+        label->setBuddy(player1Name);
+        label_2->setBuddy(player2Name);
 #endif // QT_NO_SHORTCUT
-        QWidget::setTabOrder(lineEdit, lineEdit_2);
+        QWidget::setTabOrder(player1Name, player2Name);
 
         retranslateUi(ConfigurationDialog);
         QObject::connect(buttonBox, SIGNAL(rejected()), ConfigurationDialog, SLOT(reject()));
         QObject::connect(buttonBox, SIGNAL(accepted()), ConfigurationDialog, SLOT(accept()));
-        QObject::connect(lineEdit, SIGNAL(textChanged(QString)), ConfigurationDialog, SLOT(updateOKButtonState()));
-        QObject::connect(lineEdit_2, SIGNAL(textChanged(QString)), ConfigurationDialog, SLOT(updateOKButtonState()));
+        QObject::connect(player1Name, SIGNAL(textChanged(QString)), ConfigurationDialog, SLOT(updateOKButtonState()));
+        QObject::connect(player2Name, SIGNAL(textChanged(QString)), ConfigurationDialog, SLOT(updateOKButtonState()));
 
         QMetaObject::connectSlotsByName(ConfigurationDialog);
     } // setupUi
@@ -84,8 +84,8 @@ public:
     void retranslateUi(QDialog *ConfigurationDialog)
     {
         ConfigurationDialog->setWindowTitle(QApplication::translate("ConfigurationDialog", "Dialog", nullptr));
-        player1Name->setText(QApplication::translate("ConfigurationDialog", "Player &1 Name:", nullptr));
-        player2Name->setText(QApplication::translate("ConfigurationDialog", "Player &2 Name:", nullptr));
+        label->setText(QApplication::translate("ConfigurationDialog", "Player &1 Name:", nullptr));
+        label_2->setText(QApplication::translate("ConfigurationDialog", "Player &2 Name:", nullptr));
     } // retranslateUi
 
 };
