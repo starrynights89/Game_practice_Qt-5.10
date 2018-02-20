@@ -15,30 +15,30 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
-    <widget class="QLabel" name="player1Name">
+    <widget class="QLabel" name="label">
      <property name="text">
       <string>Player &amp;1 Name:</string>
      </property>
      <property name="buddy">
-      <cstring>lineEdit</cstring>
+      <cstring>player1Name</cstring>
      </property>
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="QLineEdit" name="lineEdit_2"/>
+    <widget class="QLineEdit" name="player2Name"/>
    </item>
    <item row="1" column="0">
-    <widget class="QLabel" name="player2Name">
+    <widget class="QLabel" name="label_2">
      <property name="text">
       <string>Player &amp;2 Name:</string>
      </property>
      <property name="buddy">
-      <cstring>lineEdit_2</cstring>
+      <cstring>player2Name</cstring>
      </property>
     </widget>
    </item>
    <item row="0" column="1">
-    <widget class="QLineEdit" name="lineEdit"/>
+    <widget class="QLineEdit" name="player1Name"/>
    </item>
    <item row="2" column="0" colspan="2">
     <widget class="QDialogButtonBox" name="buttonBox">
@@ -53,8 +53,8 @@
   </layout>
  </widget>
  <tabstops>
-  <tabstop>lineEdit</tabstop>
-  <tabstop>lineEdit_2</tabstop>
+  <tabstop>player1Name</tabstop>
+  <tabstop>player2Name</tabstop>
  </tabstops>
  <resources/>
  <connections>
@@ -65,8 +65,8 @@
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>197</x>
-     <y>129</y>
+     <x>206</x>
+     <y>92</y>
     </hint>
     <hint type="destinationlabel">
      <x>173</x>
@@ -81,8 +81,8 @@
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>197</x>
-     <y>129</y>
+     <x>206</x>
+     <y>92</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -91,7 +91,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit</sender>
+   <sender>player1Name</sender>
    <signal>textChanged(QString)</signal>
    <receiver>ConfigurationDialog</receiver>
    <slot>updateOKButtonState()</slot>
@@ -107,14 +107,14 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit_2</sender>
+   <sender>player2Name</sender>
    <signal>textChanged(QString)</signal>
    <receiver>ConfigurationDialog</receiver>
    <slot>updateOKButtonState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>129</x>
-     <y>71</y>
+     <x>217</x>
+     <y>60</y>
     </hint>
     <hint type="destinationlabel">
      <x>47</x>
