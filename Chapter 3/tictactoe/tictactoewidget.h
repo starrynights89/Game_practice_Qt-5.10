@@ -13,6 +13,7 @@ class TicTacToeWidget : public QWidget
                                     NOTIFY currentPlayerChanged)
 
 public:
+    //Enumerate the player list
     enum Player
     {
         Invalid, Player1, Player2, Draw
